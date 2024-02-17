@@ -56,8 +56,8 @@ const Header = () => {
           </div>
           <nav className="mx-6 flex items-center space-x-4 lg:space-x-6 hidden md:block">
             {routes.map((link, i) => (
-              <Button asChild variant="ghost">
-                <Link key={i} href={link.href}>
+              <Button key={i} asChild variant="ghost">
+                <Link  href={link.href}>
                   {link.label}
                 </Link>
               </Button>
